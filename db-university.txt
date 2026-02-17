@@ -68,3 +68,16 @@ WHERE date = "2020-06-20" AND hour(hour) >= 14
 SELECT *
 FROM degrees
 WHERE level = "magistrale"
+
+
+-- Da quanti dipartimenti è composta l'università? (12)
+
+SELECT COUNT(id) (oppure * per la lista)
+FROM departments
+
+
+-- Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+SELECT COUNT(id) (oppure * per la lista)
+FROM teachers
+WHERE phone IS NULL
