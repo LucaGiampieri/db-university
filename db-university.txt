@@ -5,3 +5,10 @@ GROUP BY
 SELECT COUNT(id), year(enrolment_date)
 FROM students
 GROUP BY year(enrolment_date)
+
+
+-- Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+SELECT COUNT(id), office_address
+FROM teachers
+GROUP BY office_address
